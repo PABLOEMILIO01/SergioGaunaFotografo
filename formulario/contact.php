@@ -2,7 +2,7 @@
 
   $receiving_email_address = 'sergiogaunafotografo@gmail.com';
 
-  if( file_exists($php_email_form = '..php-email-form/php-email-form.php' )) {
+  if( file_exists($php_email_form = 'php-email-form/contact.php' )) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');
@@ -30,4 +30,7 @@
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
+  $headers = "From: ".$email.'sergiogaunafotografo@gmail.com';
+  mail($email_to, $email_subject, $email_message, $headers);
+  header("Location: https://example.com");
 ?>

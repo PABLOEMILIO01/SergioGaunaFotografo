@@ -1,6 +1,6 @@
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   color: #444444;
 }
 
@@ -15,7 +15,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 #main {
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Spline Sans Mono', monospace;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #888888;
