@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 992px) {
   #header .logo {
-    font-size: 15px;
+    font-size: 20x;
   }
 }
 
@@ -367,11 +367,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .slider{
   background-repeat: no-repeat;
-  background-size: cover;
+ background-size:cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
-  animation: slide 40s infinite;
+  height: 90vh;
+  animation: slide 80s infinite;
 }
 .content{
   color: #fff;
