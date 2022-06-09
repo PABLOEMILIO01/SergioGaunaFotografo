@@ -367,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .slider{
   background-repeat: no-repeat;
- background-size:cover;
+  background-size:cover;
   background-position: center;
   width: 100%;
   height: 90vh;
@@ -425,19 +425,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 @keyframes slide{
   0%{
-      background-image: url(/img/portfolio/foto30.jpeg);    
+      background-image: url(/img/portfolio/foto22.jpeg);    
   }
   20%{
       background-image: url(/img/portfolio/foto37.jpeg);  
   }
   20.01%{
-      background-image: url(/img/portfolio/foto22.jpeg);    
+      background-image: url(/img/portfolio/foto41.jpeg);    
   }
   40%{
       background-image: url(/img/portfolio/foto38.jpeg);  
   }
   40.01%{
-      background-image: url(/img/portfolio/foto39.jpeg);    
+      background-image: url(/img/portfolio/foto37.jpeg);    
   }
   60%{
      background-image: url(/img/portfolio/foto40.jpeg);  
@@ -446,13 +446,13 @@ h1, h2, h3, h4, h5, h6 {
      background-image: url(/img/portfolio/foto12.jpeg);      
   }
   80%{
-     background-image: url(/img/portfolio/foto16.jpeg);  
+     background-image: url(/img/portfolio/foto42.jpeg);  
   }
   80.01%{
      background-image: url(/img/portfolio/foto2.jpg);    
   }
   100%{
-     background-image: url(/img/portfolio/foto1.jpg);  
+     background-image: url(/img/portfolio/foto26.jpg);  
   }
 
 }
