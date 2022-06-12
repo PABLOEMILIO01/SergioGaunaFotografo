@@ -1,36 +1,23 @@
 <?php
+ 
+   if(isset($_POST[`enviar`])) {
+    if (!empty($_POST{`name`}) && !empty($_POST{`quefestejas`}) && !empty($_POST{`telefono`}) && !empty($_POST{`email`}) && !empty($_POST{`motivo`}) && !empty($_POST{`msg`})) {
+      $name = $_POST[`name`];
+      $quefestejas = $_POST{`quefestejas`};
+      $telefono = $_POST{`telefono`};
+      $email = $_POST{`email`};
+      $motivo = $_POST{`motivo`};
+      $msg = $_POST{`msg`};
+      $header = "from: noreply@example.com" . "\r\n";
+      $header.= "Reply-to:  noreply@example.com" . "\r\n";
+      $header.= "X-Mailer: PHP/". phpversion();
+      $mail = @mail($email,$asunto,$msg,$header);
+      if ($mail) {
+          echo "<h4>¡Enviado Con Exito</h4>";
+      }
 
-  $receiving_email_address = 'sergiogaunafotografo@gmail.com';
+    }
+   }
 
-  if( file_exists($php_email_form = 'php-email-form/contact.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
   
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
-/* 
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
- */
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
-  $headers = "From: ".$email.'sergiogaunafotografo@gmail.com';
-  mail($email_to, $email_subject, $email_message, $headers);
-  header("Location: https://example.com");
 ?>
