@@ -8,10 +8,10 @@
       $email = $_POST{`email`};
       $motivo = $_POST{`motivo`};
       $msg = $_POST{`msg`};
-      $header = "from: noreply@example.com" . "\r\n";
-      $header.= "Reply-to:  noreply@example.com" . "\r\n";
+      $header = "from: emiliogauna32@gmail.com" . "\r\n";
+      $header.= "Reply-to: emiliogauna32@gmail.com" . "\r\n";
       $header.= "X-Mailer: PHP/". phpversion();
-      $mail = @mail($email,$asunto,$msg,$header);
+      $mail =@mail($email,$asunto,$msg,$header);
       if ($mail) {
           echo "<h4>¡Enviado Con Exito</h4>";
       }
